@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35617.110
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestAzureAngular19", "TestAzureAngular19.csproj", "{A76C82FB-3B0E-4361-B516-7B7B33AF2E20}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A76C82FB-3B0E-4361-B516-7B7B33AF2E20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A76C82FB-3B0E-4361-B516-7B7B33AF2E20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A76C82FB-3B0E-4361-B516-7B7B33AF2E20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A76C82FB-3B0E-4361-B516-7B7B33AF2E20}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7EF364AB-0652-4F9E-AE56-165EC791ABED}
+	EndGlobalSection
+EndGlobal
