@@ -1,0 +1,44 @@
+<div class="container">
+  <h1>Aplicación de Prueba – Reto Técnico Fullstack</h1>
+
+  <p class="description">
+    Esta aplicación fue desarrollada como parte de un reto técnico. Permite registrar datos simples de usuario (nombre y edad),
+    almacenarlos en Azure Blob Storage y consumir imágenes públicas o privadas mediante APIs expuestas desde .NET 8.
+    Incluye generación de URL firmadas con SAS para acceso temporal seguro.
+  </p>
+
+  <section class="form-section">
+    <label for="nombre">Nombre</label>
+    <input id="nombre"
+           type="text"
+           [(ngModel)]="nombre"
+           placeholder="Ingresa tu nombre" />
+
+    <label for="edad">Edad</label>
+    <input id="edad"
+           type="number"
+           [(ngModel)]="edad"
+           placeholder="Ingresa tu edad" />
+  </section>
+
+
+  <section class="button-group">
+    <button (click)="upload()">Enviar datos</button>
+    <button (click)="descargar()">Descargar imagen (Base64)</button>
+    <button (click)="getSas()">Obtener URL con SAS</button>
+  </section>
+
+  <section *ngIf="safeImageSrc" class="output-section">
+    <h3>Imagen recuperada (Base64)</h3>
+    <img [src]="safeImageSrc" alt="Imagen descargada" />
+  </section>
+
+
+  <section *ngIf="sasUrl" class="output-section">
+    <h3>URL temporal con token SAS</h3>
+    <textarea [value]="sasUrl"
+              readonly
+              rows="4"
+              placeholder="Aquí aparecerá la URL SAS generada"></textarea>
+  </section>
+</div>
